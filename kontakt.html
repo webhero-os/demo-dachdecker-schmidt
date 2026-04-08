@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt – Dachdecker Schmidt Heidelberg</title>
+  <meta name="description" content="Kontaktieren Sie Dachdecker Schmidt in Heidelberg. Jetzt Anfrage stellen oder direkt anrufen – wir freuen uns auf Ihre Nachricht.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">▲</span>
+      <span class="logo-text">Schmidt<span class="logo-accent">Dach</span></span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Start</a></li>
+        <li><a href="leistungen.html" class="nav-link">Leistungen</a></li>
+        <li><a href="kontakt.html" class="nav-link active">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Kontakt</h1>
+      <p class="page-hero__sub">Wir sind für Sie da – sprechen Sie uns an.</p>
+    </div>
+  </section>
+
+  <section class="section contact-section">
+    <div class="container contact-grid">
+
+      <div class="contact-form-wrap">
+        <h2>Nachricht senden</h2>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Ihr vollständiger Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" placeholder="ihre@email.de" required>
+          </div>
+          <div class="form-group">
+            <label for="telefon">Telefon</label>
+            <input type="tel" id="telefon" name="telefon" placeholder="+49 6221 ...">
+          </div>
+          <div class="form-group">
+            <label for="nachricht">Nachricht <span aria-hidden="true">*</span></label>
+            <textarea id="nachricht" name="nachricht" rows="6" placeholder="Wie können wir Ihnen helfen?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Nachricht absenden</button>
+        </form>
+        <div class="form-success" id="form-success" hidden>
+          <p>✓ Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns so schnell wie möglich bei Ihnen.</p>
+        </div>
+      </div>
+
+      <div class="contact-info">
+        <h2>So erreichen Sie uns</h2>
+        <ul class="contact-list">
+          <li class="contact-list__item">
+            <span class="contact-list__icon" aria-hidden="true">📍</span>
+            <div>
+              <strong>Adresse</strong><br>
+              Dachdecker Schmidt<br>
+              Musterstraße 12<br>
+              69115 Heidelberg
+            </div>
+          </li>
+          <li class="contact-list__item">
+            <span class="contact-list__icon" aria-hidden="true">📞</span>
+            <div>
+              <strong>Telefon</strong><br>
+              <a href="tel:+496221123456">06221 123456</a>
+            </div>
+          </li>
+          <li class="contact-list__item">
+            <span class="contact-list__icon" aria-hidden="true">✉️</span>
+            <div>
+              <strong>E-Mail</strong><br>
+              <a href="mailto:info@dachdecker-schmidt.de">info@dachdecker-schmidt.de</a>
+            </div>
+          </li>
+          <li class="contact-list__item">
+            <span class="contact-list__icon" aria-hidden="true">🕐</span>
+            <div>
+              <strong>Öffnungszeiten</strong><br>
+              Mo–Fr: 07:00 – 17:00 Uhr<br>
+              Sa: 08:00 – 12:00 Uhr
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo logo--footer">
+        <span class="logo-icon">▲</span>
+        <span class="logo-text">Schmidt<span class="logo-accent">Dach</span></span>
+      </a>
+      <p class="footer-tagline">Meisterbetrieb für Dachdeckerei<br>in Heidelberg &amp; Region</p>
+      <div class="footer-social">
+        <a href="https://www.dachdecker-schmidt.de" class="social-link" target="_blank" rel="noopener">Web</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <h3 class="footer-nav__title">Navigation</h3>
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="leistungen.html">Leistungen</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h3 class="footer-nav__title">Kontakt</h3>
+      <address>
+        Dachdecker Schmidt<br>
+        Musterstraße 12<br>
+        69115 Heidelberg<br>
+        <a href="tel:+496221123456">06221 123456</a><br>
+        <a href="mailto:info@dachdecker-schmidt.de">info@dachdecker-schmidt.de</a>
+      </address>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 Dachdecker Schmidt · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  const navToggle = document.getElementById('nav-toggle');
+  const mainNav = document.getElementById('main-nav');
+  if (navToggle && mainNav) {
+    navToggle.addEventListener('click', function () {
+      const open = mainNav.classList.toggle('is-open');
+      navToggle.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+    });
+  }
+
+  // Sticky header
+  const siteHeader = document.getElementById('site-header');
+  if (siteHeader) {
+    window.addEventListener('scroll', function () {
+      siteHeader.classList.toggle('is-scrolled', window.scrollY > 40);
+    });
+  }
+
+  // Contact form – JS success message (no real submission)
+  const form = document.getElementById('contact-form');
+  const successMsg = document.getElementById('form-success');
+  if (form && successMsg) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const required = form.querySelectorAll('[required]');
+      let valid = true;
+      required.forEach(function (field) {
+        if (!field.value.trim()) {
+          field.classList.add('is-invalid');
+          valid = false;
+        } else {
+          field.classList.remove('is-invalid');
+        }
+      });
+      if (!valid) return;
+      form.hidden = true;
+      successMsg.hidden = false;
+      successMsg.focus();
+    });
+  }
+</script>
+
+</body>
+</html>
