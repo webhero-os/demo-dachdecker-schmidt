@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ – Häufige Fragen | SchmidtDach Heidelberg</title>
+  <meta name="description" content="Antworten auf häufig gestellte Fragen rund um Dachdeckerarbeiten, Reparaturen, Kosten und Termine bei Dachdecker Schmidt in Heidelberg.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Accordion styles */
+    .faq-section {
+      padding: 4rem 0 6rem;
+    }
+    .faq-intro {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 3rem;
+    }
+    .faq-intro h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    .faq-intro p {
+      color: var(--color-muted, #666);
+      line-height: 1.7;
+    }
+    .faq-list {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .faq-item {
+      border: 1px solid var(--color-border, #e0e0e0);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--color-card, #fff);
+    }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.25rem 1.5rem;
+      text-align: left;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      color: var(--color-text, #1a1a1a);
+      transition: background 0.2s;
+    }
+    .faq-question:hover {
+      background: var(--color-hover, #f5f5f5);
+    }
+    .faq-question[aria-expanded="true"] {
+      background: var(--color-hover, #f5f5f5);
+    }
+    .faq-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-style: normal;
+      font-size: 1.25rem;
+      line-height: 1;
+      transition: transform 0.25s ease;
+      color: var(--color-accent, #d97706);
+    }
+    .faq-question[aria-expanded="true"] .faq-icon {
+      transform: rotate(45deg);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.25s ease;
+      padding: 0 1.5rem;
+    }
+    .faq-answer.is-open {
+      max-height: 600px;
+      padding: 0 1.5rem 1.25rem;
+    }
+    .faq-answer p {
+      color: var(--color-muted, #555);
+      line-height: 1.75;
+      margin: 0;
+    }
+    .faq-answer p + p {
+      margin-top: 0.75rem;
+    }
+    .faq-cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .faq-cta p {
+      color: var(--color-muted, #666);
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">▲</span>
+        <span class="logo-text">Schmidt<span class="logo-accent">Dach</span></span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">Start</a></li>
+          <li><a href="leistungen.html" class="nav-link">Leistungen</a></li>
+          <li><a href="ueber-uns.html" class="nav-link">Über uns</a></li>
+          <li><a href="faq.html" class="nav-link active">FAQ</a></li>
+          <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="faq-section">
+      <div class="container">
+        <div class="faq-intro">
+          <h1>Häufig gestellte Fragen</h1>
+          <p>Hier finden Sie Antworten auf die wichtigsten Fragen rund um unsere Leistungen, Abläufe und Kosten. Wurde Ihre Frage nicht beantwortet? Sprechen Sie uns gerne direkt an.</p>
+        </div>
+
+        <div class="faq-list" id="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+              Wie lange dauert es, bis ein Termin vergeben werden kann?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-1" role="region">
+              <p>In der Regel melden wir uns innerhalb von 24 Stunden zurück und vereinbaren einen Besichtigungstermin. Die Umsetzung hängt von Art und Umfang der Arbeiten ab – kleine Reparaturen können oft innerhalb weniger Tage erledigt werden, größere Projekte werden gemeinsam mit Ihnen geplant.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+              Führen Sie auch Notfall- und Sturmschadenreparaturen durch?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-2" role="region">
+              <p>Ja. Bei akuten Sturmschäden oder undichten Stellen sind wir schnellstmöglich vor Ort, um eine provisorische Abdichtung vorzunehmen und weiteren Schaden zu verhindern. Rufen Sie uns direkt an – wir priorisieren Notfälle entsprechend.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+              Erhalte ich vor den Arbeiten einen schriftlichen Kostenvoranschlag?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-3" role="region">
+              <p>Selbstverständlich. Nach der Besichtigung erhalten Sie von uns immer ein detailliertes, schriftliches Angebot ohne versteckte Kosten. Erst nach Ihrer ausdrücklichen Zustimmung beginnen wir mit den Arbeiten.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+              Welche Dacharten können Sie sanieren oder neu eindecken?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-4" role="region">
+              <p>Wir arbeiten mit allen gängigen Dachformen und Materialien: Ziegel- und Schieferdächer, Flachdächer, Bitumen- und Kunststoffabdichtungen, Metalldächer sowie Gründächer. Haben Sie ein besonderes Dachsystem? Sprechen Sie uns an – wir finden eine Lösung.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
+              Wann ist eine Dachreparatur sinnvoll und wann eine komplette Neueindeckung?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-5" role="region">
+              <p>Das hängt vom Alter und Zustand des Daches ab. Sind nur einzelne Ziegel beschädigt oder kleine Stellen undicht, reicht oft eine gezielte Reparatur. Ist die Dachfläche flächendeckend porös, die Unterkonstruktion beschädigt oder das Dach älter als 40 Jahre, lohnt sich in den meisten Fällen eine Neueindeckung – auch wirtschaftlich. Nach der Inspektion beraten wir Sie ehrlich und transparent.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-6">
+              Bieten Sie auch Dachbegrünung an?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-6" role="region">
+              <p>Ja, wir planen und realisieren extensive und intensive Gründächer. Eine Dachbegrünung verbessert die Wärmedämmung, verlängert die Lebensdauer der Dachabdichtung und leistet einen wertvollen Beitrag zum Stadtklima. Gerne beraten wir Sie zu den Möglichkeiten auf Ihrem Dach.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-7">
+              Können Sie Dachdämmung und Klempnerarbeiten ebenfalls übernehmen?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-7" role="region">
+              <p>Ja. Wir bieten Wärmedämmung von Dach und Fassade sowie alle anfallenden Klempnerarbeiten wie Dachrinnen, Fallrohre und Blechverkleidungen aus einer Hand an. So haben Sie einen einzigen Ansprechpartner für das gesamte Projekt.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-8">
+              In welchem Umkreis sind Sie tätig?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-8" role="region">
+              <p>Unser Haupteinsatzgebiet ist Heidelberg und die umliegende Region (Rhein-Neckar-Kreis, Mannheim, Weinheim, Sinsheim). Bei größeren Projekten sind wir auch darüber hinaus tätig – sprechen Sie uns einfach an.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-9">
+              Welche Garantien und Gewährleistungen gelten für Ihre Arbeit?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-9" role="region">
+              <p>Als eingetragener Meisterbetrieb gilt die gesetzliche Gewährleistung von fünf Jahren auf unsere handwerklichen Leistungen. Zusätzlich gewähren die Hersteller auf die von uns verwendeten Materialien eigene Produktgarantien, über die wir Sie im Angebot informieren.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-10">
+              Wie läuft die Schadensregulierung mit der Versicherung ab?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-10" role="region">
+              <p>Wir unterstützen Sie dabei, den Schaden gegenüber Ihrer Gebäude- oder Elementarschadenversicherung zu dokumentieren. Auf Wunsch erstellen wir einen detaillierten Schadenbericht und stimmen uns direkt mit Ihrem Versicherungsunternehmen ab, damit Sie so wenig Aufwand wie möglich haben.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="faq-cta">
+          <p>Noch weitere Fragen? Wir sind gerne für Sie da.</p>
+          <a href="kontakt.html" class="btn btn-primary">Jetzt Kontakt aufnehmen</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo--footer">
+          <span class="logo-icon">▲</span>
+          <span class="logo-text">Schmidt<span class="logo-accent">Dach</span></span>
+        </a>
+        <p class="footer-tagline">Meisterbetrieb für Dachdeckerei<br>in Heidelberg &amp; Region</p>
+        <div class="footer-social">
+          <a href="https://www.dachdecker-schmidt.de" class="social-link" target="_blank" rel="noopener">Web</a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h3 class="footer-heading">Leistungen</h3>
+        <ul>
+          <li><a href="leistungen.html">Dacheindeckung</a></li>
+          <li><a href="leistungen.html">Dachreparatur</a></li>
+          <li><a href="leistungen.html">Flachdach</a></li>
+          <li><a href="leistungen.html">Dachdämmung</a></li>
+          <li><a href="leistungen.html">Dachbegrünung</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h3 class="footer-heading">Unternehmen</h3>
+        <ul>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3 class="footer-heading">Kontakt</h3>
+        <address>
+          <p>Dachdecker Schmidt GmbH<br>Musterstraße 12<br>69115 Heidelberg</p>
+          <p><a href="tel:+496221123456">06221 / 123 456</a></p>
+          <p><a href="mailto:info@dachdecker-schmidt.de">info@dachdecker-schmidt.de</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2024 SchmidtDach – Dachdecker Schmidt GmbH. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navigation toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const mainNav = document.getElementById('main-nav');
+    if (navToggle && mainNav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = mainNav.classList.toggle('is-open');
+        navToggle.setAttribute('aria-label', isOpen ? 'Menü schließen' : 'Menü öffnen');
+      });
+    }
+
+    // Sticky header
+    const siteHeader = document.getElementById('site-header');
+    if (siteHeader) {
+      window.addEventListener('scroll', () => {
+        siteHeader.classList.toggle('is-scrolled', window.scrollY > 10);
+      });
+    }
+
+    // Accordion
+    const faqList = document.getElementById('faq-list');
+    if (faqList) {
+      faqList.addEventListener('click', (e) => {
+        const btn = e.target.closest('.faq-question');
+        if (!btn) return;
+        const answerId = btn.getAttribute('aria-controls');
+        const answer = document.getElementById(answerId);
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+        // Close all others
+        faqList.querySelectorAll('.faq-question[aria-expanded="true"]').forEach((openBtn) => {
+          if (openBtn !== btn) {
+            openBtn.setAttribute('aria-expanded', 'false');
+            const openAnswer = document.getElementById(openBtn.getAttribute('aria-controls'));
+            if (openAnswer) openAnswer.classList.remove('is-open');
+          }
+        });
+
+        btn.setAttribute('aria-expanded', String(!isExpanded));
+        if (answer) answer.classList.toggle('is-open', !isExpanded);
+      });
+    }
+  </script>
+
+</body>
+</html>
